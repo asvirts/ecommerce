@@ -7,10 +7,25 @@ body {
 ul.main-nav {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 li.main-nav-item {
     list-style-type: none;
     display: inline-block;
     margin: .5rem 1rem;
+}
+
+li > button {
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    margin: .5rem 1rem;
+    list-style-type: none;
+}
+
+li > button:hover {
+    border: 2px solid #333;
+    cursor: pointer;
 }
