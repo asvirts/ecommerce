@@ -7,7 +7,11 @@ import {
 import Root from "./routes/root"
 import "./index.css"
 import Error from "./routes/error"
-import Nav from "./components/Nav"
+
+// PAGES
+import About from "./routes/about"
+import Shop from "./routes/shop"
+import Contact from "./routes/contact"
 
 const router = createBrowserRouter([
   {
@@ -15,11 +19,25 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <Error />,
   },
+  {
+    path: "/about",
+    element: <About />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+    errorElement: <Error />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Nav />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

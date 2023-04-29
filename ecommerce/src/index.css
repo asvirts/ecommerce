@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+/* NAVIGATION */
+ul.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+li.main-nav-item {
+    list-style-type: none;
+    display: inline-block;
+    margin: .5rem 1rem;
+}

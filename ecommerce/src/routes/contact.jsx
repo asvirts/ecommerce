@@ -1,10 +1,10 @@
 import Nav from "../components/Nav";
 
-export default function Root() {
+export default function Contact() {
     return (
       <>
         <Nav />
-        <h1>Hello, world</h1>
+        <h1>Contact</h1>
       </>
     );
   }
